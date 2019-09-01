@@ -4,15 +4,23 @@ public class ReverseString {
 
     public static void main(String[] args) {
         reverseString("yumna");
+        reverseString2("samina");
+    }
+
+    private static void reverseString2(String name) {
+        //using string builder class and it's reverse method
+        StringBuilder stringBuilder = new StringBuilder();
+        stringBuilder.append(name);
+        System.out.println("Reverse of samina is " + stringBuilder.reverse());
     }
 
     private static void reverseString(String str) {
         char[] strArray = str.toCharArray();
-        StringBuilder result = new StringBuilder(strArray.length);
-
+        System.out.println("The reverse of yumna is ");
         for (int i=strArray.length-1;i>=0;i--) {
-            result.append(strArray[i]);
+            System.out.print(strArray[i]);
         }
-        System.out.println("The reverse string is " + result);
+        System.out.println("");
+
     }
 }
