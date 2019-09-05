@@ -2,7 +2,8 @@ import java.util.Stack;
 
 public class BracketProblem {
 
-    //declare a character stack
+    //Given an expression string exp ,
+    // write a program to examine whether the pairs and the orders of “{“,”}”,”(“,”)”,”[“,”]” are correct in exp.
 
     public static void main(String[] args) {
 
@@ -15,6 +16,11 @@ public class BracketProblem {
     }
 
     private static boolean areParenthesisBalanced(char exp[]) {
+        //make a variable of Stack class
+        //convert string expression to char array
+        //traverse each element of array,
+        //if the element is opening bracket (,{,[ then push it
+        //else check if it's matching pair and call pop method
         Stack stack = new Stack();
 
         for (int i=0;i<exp.length;i++){

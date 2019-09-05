@@ -30,7 +30,7 @@ public class Factorial {
         return userInput * factorialRec(userInput-1);
     }
 
-    //using ternary operator
+    //using ternary operator and recursive approach
     private static int factorialTer(int userInput){
         return (userInput==0 || userInput==1) ? 1 : userInput*factorialTer(userInput-1);
     }

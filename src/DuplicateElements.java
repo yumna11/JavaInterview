@@ -10,6 +10,7 @@ public class DuplicateElements {
     }
 
     private static void findDuplicate1() {
+        
         int[] array = {4, 2, 4, 5, 2, 3, 1};
         Map<Integer,Integer> map = new HashMap<>();
         int count = 1;
@@ -31,6 +32,9 @@ public class DuplicateElements {
     }
 
     private static void findDuplicate() {
+        //use 2 for loops
+        //outer loop pick each element and compare it with other elements using inner loop
+        //if found, print duplicate number
         int[] array = {4, 2, 4, 5, 2, 3, 1};
         for (int i = 0; i < array.length-1 ; i++) {
             for (int j = i+1; j < array.length; j++) {

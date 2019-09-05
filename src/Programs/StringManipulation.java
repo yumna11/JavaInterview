@@ -8,6 +8,8 @@ public class StringManipulation {
     }
 
     private static void removeJunk() {
+
+        // '\\W' removes all special characters from string
         String sentence = "Yumna asim is $a go#od girl";
         System.out.println(sentence);
         System.out.println("After removing the special characters");
@@ -16,6 +18,7 @@ public class StringManipulation {
     }
 
     private static void checkChar() {
+        //how to check if char is a special character, check ch against range of a to z, A to Z, 0 to 9
         char ch = '$';
         if (!(ch >= 'a' && ch <= 'z'
                 || ch >= 'A' && ch <= 'Z'
